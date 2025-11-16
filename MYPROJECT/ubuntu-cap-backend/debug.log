@@ -14818,3 +14818,31 @@ WARNING 2025-11-16 22:44:33,205 basehttp 9148 9472 "POST /api/users/verify-phone
 ERROR 2025-11-16 22:45:29,085 views 9148 9472 Registration error: JSON parse error - Expecting value: line 1 column 1 (char 0)
 ERROR 2025-11-16 22:45:29,124 log 9148 9472 Internal Server Error: /api/users/register/
 ERROR 2025-11-16 22:45:29,126 basehttp 9148 9472 "POST /api/users/register/ HTTP/1.1" 500 67
+INFO 2025-11-16 22:49:44,391 autoreload 9148 10236 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\mpesa\models.py changed, reloading.
+INFO 2025-11-16 22:49:48,393 autoreload 10140 12716 Watching for file changes with StatReloader
+INFO 2025-11-16 22:52:20,497 autoreload 10140 12716 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\mpesa\urls.py changed, reloading.
+INFO 2025-11-16 22:52:24,456 autoreload 10804 19408 Watching for file changes with StatReloader
+INFO 2025-11-16 22:52:41,909 autoreload 10804 19408 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\mpesa\services.py changed, reloading.
+INFO 2025-11-16 22:52:46,187 autoreload 13468 19460 Watching for file changes with StatReloader
+INFO 2025-11-16 22:53:22,581 autoreload 13468 19460 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\mpesa\urls.py changed, reloading.
+INFO 2025-11-16 22:53:25,554 autoreload 2200 16604 Watching for file changes with StatReloader
+INFO 2025-11-16 22:58:33,391 autoreload 2200 16604 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\credit_scoring\urls.py changed, reloading.
+INFO 2025-11-16 22:58:42,828 autoreload 17980 18660 Watching for file changes with StatReloader
+INFO 2025-11-16 23:01:00,063 autoreload 17980 18660 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\credit_scoring\urls.py changed, reloading.
+INFO 2025-11-16 23:01:05,410 autoreload 12652 8524 Watching for file changes with StatReloader
+INFO 2025-11-16 23:01:46,016 autoreload 12652 8524 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\credit_scoring\views.py changed, reloading.
+INFO 2025-11-16 23:01:51,948 autoreload 3864 14144 Watching for file changes with StatReloader
+INFO 2025-11-16 23:42:30,128 autoreload 3864 14144 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\ubuntu_core\settings.py changed, reloading.
+INFO 2025-11-16 23:42:36,194 autoreload 17048 16792 Watching for file changes with StatReloader
+INFO 2025-11-16 23:48:30,119 autoreload 17048 16792 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\credit_scoring\services.py changed, reloading.
+INFO 2025-11-16 23:48:37,689 autoreload 14924 17776 Watching for file changes with StatReloader
+INFO 2025-11-16 23:54:55,230 autoreload 14924 17776 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\credit_scoring\views.py changed, reloading.
+INFO 2025-11-16 23:54:59,636 autoreload 15928 14600 Watching for file changes with StatReloader
+INFO 2025-11-17 00:12:18,768 autoreload 15928 14600 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\credit_scoring\urls.py changed, reloading.
+INFO 2025-11-17 00:12:25,270 autoreload 1528 18596 Watching for file changes with StatReloader
+INFO 2025-11-17 00:17:42,321 autoreload 1528 18596 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\credit_scoring\urls.py changed, reloading.
+INFO 2025-11-17 00:17:45,684 autoreload 2864 3704 Watching for file changes with StatReloader
+INFO 2025-11-17 00:31:16,336 autoreload 2864 3704 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\credit_scoring\views.py changed, reloading.
+INFO 2025-11-17 00:31:22,058 autoreload 14404 8524 Watching for file changes with StatReloader
+INFO 2025-11-17 00:34:26,365 autoreload 14404 8524 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\credit_scoring\serializers.py changed, reloading.
+INFO 2025-11-17 00:34:32,213 autoreload 16936 16920 Watching for file changes with StatReloader

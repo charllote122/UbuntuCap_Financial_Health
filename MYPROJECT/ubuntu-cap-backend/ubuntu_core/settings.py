@@ -201,10 +201,13 @@ EMAIL_HOST_USER = config('EMAIL_HOST_USER', default='')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD', default='')
 DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL', default='noreply@ubuntucap.com')
 
-# Africa's Talking configuration
-AFRICASTALKING_USERNAME = config('AFRICASTALKING_USERNAME', default='sandbox')
-AFRICASTALKING_API_KEY = config('AFRICASTALKING_API_KEY', default='')
-AFRICASTALKING_SENDER_ID = config('AFRICASTALKING_SENDER_ID', default='UBUNTUCAP')
+# M-Pesa Daraja API Configuration
+MPESA_CONSUMER_KEY = config('MPESA_CONSUMER_KEY', default='')
+MPESA_CONSUMER_SECRET = config('MPESA_CONSUMER_SECRET', default='')
+MPESA_BASE_URL = config('MPESA_BASE_URL', default='https://sandbox.safaricom.co.ke')
+MPESA_SHORTCODE = config('MPESA_SHORTCODE', default='174379')
+MPESA_PASSKEY = config('MPESA_PASSKEY', default='bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919')
+MPESA_CALLBACK_URL = config('MPESA_CALLBACK_URL', default='')
 
 # Security settings for production
 if not DEBUG:
