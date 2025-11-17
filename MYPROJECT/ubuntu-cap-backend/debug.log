@@ -14846,3 +14846,5 @@ INFO 2025-11-17 00:31:16,336 autoreload 2864 3704 C:\Users\hp\OneDrive\Desktop\N
 INFO 2025-11-17 00:31:22,058 autoreload 14404 8524 Watching for file changes with StatReloader
 INFO 2025-11-17 00:34:26,365 autoreload 14404 8524 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\credit_scoring\serializers.py changed, reloading.
 INFO 2025-11-17 00:34:32,213 autoreload 16936 16920 Watching for file changes with StatReloader
+WARNING 2025-11-17 00:42:38,711 basehttp 16936 17428 "POST /api/credit/admin/train-model/ HTTP/1.1" 403 58
+INFO 2025-11-17 20:31:03,766 autoreload 20200 16864 Watching for file changes with StatReloader
