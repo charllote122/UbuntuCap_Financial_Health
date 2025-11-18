@@ -14849,3 +14849,27 @@ INFO 2025-11-17 00:34:32,213 autoreload 16936 16920 Watching for file changes wi
 WARNING 2025-11-17 00:42:38,711 basehttp 16936 17428 "POST /api/credit/admin/train-model/ HTTP/1.1" 403 58
 INFO 2025-11-17 20:31:03,766 autoreload 20200 16864 Watching for file changes with StatReloader
 INFO 2025-11-17 20:34:19,274 autoreload 11852 9424 Watching for file changes with StatReloader
+INFO 2025-11-18 20:21:19,320 autoreload 23092 12236 Watching for file changes with StatReloader
+INFO 2025-11-18 22:07:16,195 autoreload 26680 20252 Watching for file changes with StatReloader
+WARNING 2025-11-18 22:07:24,830 base 23092 25772 Session data corrupted
+WARNING 2025-11-18 22:07:25,793 basehttp 23092 25772 "GET /api/users/ HTTP/1.1" 404 19389
+INFO 2025-11-18 22:07:25,963 basehttp 23092 20548 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2025-11-18 22:07:26,014 basehttp 23092 25772 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 30101
+INFO 2025-11-18 22:07:26,209 basehttp 23092 25800 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 14879
+INFO 2025-11-18 22:07:26,317 basehttp 23092 25800 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4700
+WARNING 2025-11-18 22:07:52,855 base 23092 25800 Session data corrupted
+INFO 2025-11-18 22:07:52,894 basehttp 23092 25800 "GET /api/users/register HTTP/1.1" 301 0
+WARNING 2025-11-18 22:07:54,564 base 23092 25772 Session data corrupted
+WARNING 2025-11-18 22:07:54,606 basehttp 23092 25772 "GET /api/users/register/ HTTP/1.1" 405 40
+WARNING 2025-11-18 22:08:23,945 base 23092 25772 Session data corrupted
+WARNING 2025-11-18 22:08:24,007 basehttp 23092 25772 "GET /api/loans/ HTTP/1.1" 404 18328
+INFO 2025-11-18 22:10:56,858 autoreload 26680 20252 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\ubuntu_core\settings.py changed, reloading.
+INFO 2025-11-18 22:11:00,193 autoreload 25772 25072 Watching for file changes with StatReloader
+WARNING 2025-11-18 22:12:50,827 basehttp 25772 22140 "POST /api/users/register/ HTTP/1.1" 400 126
+INFO 2025-11-19 00:30:36,477 basehttp 25772 27284 "OPTIONS /api/users/profile/ HTTP/1.1" 200 0
+INFO 2025-11-19 00:30:36,484 basehttp 25772 21988 "OPTIONS /api/users/profile/ HTTP/1.1" 200 0
+INFO 2025-11-19 00:31:24,905 basehttp 25772 24672 "OPTIONS /api/users/register/ HTTP/1.1" 200 0
+INFO 2025-11-19 00:31:27,203 basehttp 25772 24672 "OPTIONS /api/users/register/ HTTP/1.1" 200 0
+INFO 2025-11-19 00:31:28,879 basehttp 25772 24672 "OPTIONS /api/users/register/ HTTP/1.1" 200 0
+INFO 2025-11-19 00:33:36,515 basehttp 25772 26800 "OPTIONS /api/users/register/ HTTP/1.1" 200 0
+INFO 2025-11-19 00:33:37,447 basehttp 25772 26800 "OPTIONS /api/users/register/ HTTP/1.1" 200 0

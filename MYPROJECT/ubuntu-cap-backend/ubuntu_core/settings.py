@@ -30,6 +30,8 @@ INSTALLED_APPS = [
     'loans',
     'mpesa',
     'credit_scoring',
+    'django_extensions',
+
 ]
 
 MIDDLEWARE = [
