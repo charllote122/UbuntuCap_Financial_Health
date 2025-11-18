@@ -152,7 +152,6 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication',
-        # 'users.authentication.PhoneNumberAuthentication',  # Comment out for now to avoid import errors
     ],
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 20,
@@ -209,6 +208,16 @@ MPESA_SHORTCODE = config('MPESA_SHORTCODE', default='174379')
 MPESA_PASSKEY = config('MPESA_PASSKEY', default='bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919')
 MPESA_CALLBACK_URL = config('MPESA_CALLBACK_URL', default='')
 
+# Development-specific settings (Debug Toolbar)
+if DEBUG:
+    INSTALLED_APPS += ['debug_toolbar']
+    MIDDLEWARE.insert(0, 'debug_toolbar.middleware.DebugToolbarMiddleware')
+    INTERNAL_IPS = ['127.0.0.1']
+    
+    # Less strict CSRF for development
+    CSRF_COOKIE_SECURE = False
+    SESSION_COOKIE_SECURE = False
+
 # Security settings for production
 if not DEBUG:
     # HTTPS settings
@@ -229,15 +238,6 @@ if not DEBUG:
     
     # Additional production security
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-else:
-    # Development-specific settings
-    INSTALLED_APPS += ['debug_toolbar']
-    MIDDLEWARE = ['debug_toolbar.middleware.DebugToolbarMiddleware'] + MIDDLEWARE
-    INTERNAL_IPS = ['127.0.0.1']
-    
-    # Less strict CSRF for development
-    CSRF_COOKIE_SECURE = False
-    SESSION_COOKIE_SECURE = False
 
 # Logging configuration
 LOGGING = {
