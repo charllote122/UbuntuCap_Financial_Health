@@ -23,22 +23,28 @@ logger = logging.getLogger(__name__)
 @csrf_exempt
 def register_user(request):
     """
-    Register a new user
+    Register a new user - NO auto-login
     """
     try:
+        print("🟡 [REGISTER] Request received:", request.data)
+        
         serializer = UserRegistrationSerializer(data=request.data)
         
         if serializer.is_valid():
+            print("🟢 [REGISTER] Serializer valid, creating user...")
             user = serializer.save()
+            print(f"🟢 [REGISTER] User created: {user.phone_number} (ID: {user.id})")
             
             # Create user profile
             ProfileService.create_user_profile(user)
+            print("🟢 [REGISTER] User profile created")
+            
+            # ✅ REMOVED AUTO-LOGIN - User must login separately
+            # login(request, user)  # This line is removed
             
             # Generate verification code
             code = VerificationService.generate_verification_code(user)
-            
-            # TODO: Send SMS with verification code via Africa's Talking
-            logger.info(f"Registration verification code for {user.phone_number}: {code}")
+            print(f"🟢 [REGISTER] Verification code generated: {code}")
             
             # Log activity
             ActivityService.log_activity(
@@ -48,19 +54,27 @@ def register_user(request):
                 request
             )
             
-            return Response({
+            response_data = {
                 'success': True,
-                'message': 'Registration successful. Please verify your phone number.',
+                'message': 'Registration successful! Please login with your credentials.',
                 'user_id': str(user.id),
-                'verification_code': code  # Remove in production - only for testing
-            }, status=status.HTTP_201_CREATED)
-        
-        return Response({
-            'success': False,
-            'errors': serializer.errors
-        }, status=status.HTTP_400_BAD_REQUEST)
+                'phone_number': user.phone_number,
+                'verification_code': code  # Remove in production
+            }
+            
+            print("🟢 [REGISTER] Sending success response")
+            return Response(response_data, status=status.HTTP_201_CREATED)
+        else:
+            print("🔴 [REGISTER] Serializer errors:", serializer.errors)
+            return Response({
+                'success': False,
+                'errors': serializer.errors
+            }, status=status.HTTP_400_BAD_REQUEST)
     
     except Exception as e:
+        print(f"🔴 [REGISTER] Exception: {str(e)}")
+        import traceback
+        traceback.print_exc()
         logger.error(f"Registration error: {str(e)}")
         return Response({
             'success': False,
@@ -123,36 +137,54 @@ def login_user(request):
     """
     User login with phone number and password
     """
-    serializer = UserLoginSerializer(data=request.data)
-    
-    if serializer.is_valid():
-        user = serializer.validated_data['user']
+    try:
+        print("🟡 [LOGIN] Login attempt for:", request.data.get('phone_number'))
         
-        # Update last login
-        user.last_login = timezone.now()
-        user.save()
+        serializer = UserLoginSerializer(data=request.data)
         
-        # Log activity
-        ActivityService.log_activity(
-            user, 
-            'LOGIN', 
-            'User logged in successfully',
-            request
-        )
+        if serializer.is_valid():
+            user = serializer.validated_data['user']
+            print(f"🟢 [LOGIN] User authenticated: {user.phone_number}")
+            
+            # Update last login
+            user.last_login = timezone.now()
+            user.save()
+            
+            # ✅ LOGIN USER (only during explicit login)
+            login(request, user)
+            print(f"🟢 [LOGIN] User logged in: {user.phone_number}")
+            
+            # Log activity
+            ActivityService.log_activity(
+                user, 
+                'LOGIN', 
+                'User logged in successfully',
+                request
+            )
+            
+            # Serialize user data
+            user_data = UserSerializer(user).data
+            
+            return Response({
+                'success': True,
+                'message': 'Login successful',
+                'user': user_data
+            })
         
-        # Serialize user data
-        user_data = UserSerializer(user).data
-        
+        print("🔴 [LOGIN] Serializer errors:", serializer.errors)
         return Response({
-            'success': True,
-            'message': 'Login successful',
-            'user': user_data
-        })
-    
-    return Response({
-        'success': False,
-        'errors': serializer.errors
-    }, status=status.HTTP_400_BAD_REQUEST)
+            'success': False,
+            'errors': serializer.errors
+        }, status=status.HTTP_400_BAD_REQUEST)
+        
+    except Exception as e:
+        print(f"🔴 [LOGIN] Exception: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        return Response({
+            'success': False,
+            'message': 'Login failed. Please try again.'
+        }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
@@ -161,47 +193,68 @@ def logout_user(request):
     """
     User logout
     """
-    # Log activity
-    ActivityService.log_activity(
-        request.user, 
-        'LOGOUT', 
-        'User logged out',
-        request
-    )
-    
-    logout(request)
-    
-    return Response({
-        'success': True,
-        'message': 'Logout successful'
-    })
+    try:
+        print(f"🟡 [LOGOUT] Logging out user: {request.user.phone_number}")
+        
+        # Log activity
+        ActivityService.log_activity(
+            request.user, 
+            'LOGOUT', 
+            'User logged out',
+            request
+        )
+        
+        logout(request)
+        print("🟢 [LOGOUT] User logged out successfully")
+        
+        return Response({
+            'success': True,
+            'message': 'Logout successful'
+        })
+        
+    except Exception as e:
+        print(f"🔴 [LOGOUT] Exception: {str(e)}")
+        return Response({
+            'success': False,
+            'message': 'Logout failed'
+        }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 @method_decorator(csrf_exempt, name='dispatch')
 class UserProfileView(generics.RetrieveUpdateAPIView):
     """
-    Get and update user profile
+    Get and update user profile - WITH DEBUGGING
     """
     permission_classes = [IsAuthenticated]
     serializer_class = UserSerializer
     
     def get_object(self):
-        return self.request.user
+        try:
+            user = self.request.user
+            print(f"🟡 [PROFILE] Getting profile for user: {user.id} - {user.phone_number}")
+            print(f"🟡 [PROFILE] User authenticated: {user.is_authenticated}")
+            return user
+        except Exception as e:
+            print(f"🔴 [PROFILE ERROR] in get_object: {str(e)}")
+            import traceback
+            traceback.print_exc()
+            raise e
     
-    def update(self, request, *args, **kwargs):
-        response = super().update(request, *args, **kwargs)
-        
-        # Update profile completion
-        ProfileService.update_profile_completion(request.user)
-        
-        # Log activity
-        ActivityService.log_activity(
-            request.user, 
-            'PROFILE_UPDATE', 
-            'User profile updated',
-            request
-        )
-        
-        return response
+    def retrieve(self, request, *args, **kwargs):
+        try:
+            print("🟡 [PROFILE] Starting profile retrieval...")
+            instance = self.get_object()
+            serializer = self.get_serializer(instance)
+            print(f"🟢 [PROFILE] Successfully retrieved profile for: {instance.phone_number}")
+            return Response(serializer.data)
+        except Exception as e:
+            print(f"🔴 [PROFILE ERROR] in retrieve: {str(e)}")
+            import traceback
+            traceback.print_exc()
+            return Response({
+                'success': False,
+                'error': 'Failed to retrieve profile',
+                'details': str(e)
+            }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
@@ -210,40 +263,54 @@ def update_profile(request):
     """
     Update user profile information
     """
-    user_serializer = UserUpdateSerializer(request.user, data=request.data, partial=True)
-    profile_serializer = UserProfileSerializer(request.user.profile, data=request.data, partial=True)
-    
-    if user_serializer.is_valid() and profile_serializer.is_valid():
-        user_serializer.save()
-        profile_serializer.save()
+    try:
+        print(f"🟡 [UPDATE PROFILE] Updating profile for: {request.user.phone_number}")
         
-        # Update profile completion
-        ProfileService.update_profile_completion(request.user)
+        user_serializer = UserUpdateSerializer(request.user, data=request.data, partial=True)
+        profile_serializer = UserProfileSerializer(request.user.profile, data=request.data, partial=True)
         
-        # Log activity
-        ActivityService.log_activity(
-            request.user, 
-            'PROFILE_UPDATE', 
-            'User profile information updated',
-            request
-        )
+        if user_serializer.is_valid() and profile_serializer.is_valid():
+            user_serializer.save()
+            profile_serializer.save()
+            
+            # Update profile completion
+            ProfileService.update_profile_completion(request.user)
+            
+            # Log activity
+            ActivityService.log_activity(
+                request.user, 
+                'PROFILE_UPDATE', 
+                'User profile information updated',
+                request
+            )
+            
+            print("🟢 [UPDATE PROFILE] Profile updated successfully")
+            return Response({
+                'success': True,
+                'message': 'Profile updated successfully',
+                'user': UserSerializer(request.user).data
+            })
         
+        errors = {}
+        if user_serializer.errors:
+            errors.update(user_serializer.errors)
+        if profile_serializer.errors:
+            errors.update(profile_serializer.errors)
+        
+        print("🔴 [UPDATE PROFILE] Validation errors:", errors)
         return Response({
-            'success': True,
-            'message': 'Profile updated successfully',
-            'user': UserSerializer(request.user).data
-        })
-    
-    errors = {}
-    if user_serializer.errors:
-        errors.update(user_serializer.errors)
-    if profile_serializer.errors:
-        errors.update(profile_serializer.errors)
-    
-    return Response({
-        'success': False,
-        'errors': errors
-    }, status=status.HTTP_400_BAD_REQUEST)
+            'success': False,
+            'errors': errors
+        }, status=status.HTTP_400_BAD_REQUEST)
+        
+    except Exception as e:
+        print(f"🔴 [UPDATE PROFILE] Exception: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        return Response({
+            'success': False,
+            'message': 'Profile update failed'
+        }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
@@ -374,35 +441,48 @@ def user_dashboard(request):
     """
     Get user dashboard data
     """
-    user = request.user
-    
-    # Get user's loan statistics (you'll integrate this with loans app)
-    loan_stats = {
-        'active_loans': 0,
-        'total_borrowed': 0,
-        'total_repaid': 0,
-        'outstanding_balance': 0
-    }
-    
-    # Get user's credit score (you'll integrate this with credit scoring app)
-    credit_score = None
     try:
-        from credit_scoring.models import CreditScore
-        latest_score = CreditScore.objects.filter(user=user).order_by('-calculated_at').first()
-        if latest_score:
-            credit_score = latest_score.score
-    except ImportError:
-        pass
-    
-    dashboard_data = {
-        'user': UserSerializer(user).data,
-        'profile_completion': user.profile.profile_completion_percentage,
-        'loan_stats': loan_stats,
-        'credit_score': credit_score,
-        'is_verified': user.is_verified
-    }
-    
-    return Response({
-        'success': True,
-        'dashboard': dashboard_data
-    })
+        user = request.user
+        print(f"🟡 [DASHBOARD] Getting dashboard for: {user.phone_number}")
+        
+        # Get user's loan statistics
+        loan_stats = {
+            'active_loans': 0,
+            'total_borrowed': 0,
+            'total_repaid': 0,
+            'outstanding_balance': 0
+        }
+        
+        # Get user's credit score
+        credit_score = None
+        try:
+            from credit_scoring.models import CreditScore
+            latest_score = CreditScore.objects.filter(user=user).order_by('-calculated_at').first()
+            if latest_score:
+                credit_score = latest_score.score
+        except ImportError:
+            print("🟡 [DASHBOARD] Credit scoring app not available")
+            pass
+        
+        dashboard_data = {
+            'user': UserSerializer(user).data,
+            'profile_completion': user.profile.profile_completion_percentage,
+            'loan_stats': loan_stats,
+            'credit_score': credit_score,
+            'is_verified': user.is_verified
+        }
+        
+        print("🟢 [DASHBOARD] Dashboard data retrieved successfully")
+        return Response({
+            'success': True,
+            'dashboard': dashboard_data
+        })
+        
+    except Exception as e:
+        print(f"🔴 [DASHBOARD] Exception: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        return Response({
+            'success': False,
+            'message': 'Failed to load dashboard'
+        }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

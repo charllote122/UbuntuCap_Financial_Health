@@ -14873,3 +14873,1464 @@ INFO 2025-11-19 00:31:27,203 basehttp 25772 24672 "OPTIONS /api/users/register/ 
 INFO 2025-11-19 00:31:28,879 basehttp 25772 24672 "OPTIONS /api/users/register/ HTTP/1.1" 200 0
 INFO 2025-11-19 00:33:36,515 basehttp 25772 26800 "OPTIONS /api/users/register/ HTTP/1.1" 200 0
 INFO 2025-11-19 00:33:37,447 basehttp 25772 26800 "OPTIONS /api/users/register/ HTTP/1.1" 200 0
+INFO 2025-11-19 00:37:10,519 autoreload 25772 25072 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\ubuntu_core\settings.py changed, reloading.
+INFO 2025-11-19 00:37:15,214 autoreload 21136 12944 Watching for file changes with StatReloader
+INFO 2025-11-19 00:38:31,190 autoreload 25740 21732 Watching for file changes with StatReloader
+INFO 2025-11-19 00:39:04,030 basehttp 21136 21740 "OPTIONS /api/users/register/ HTTP/1.1" 200 0
+WARNING 2025-11-19 00:39:05,288 basehttp 21136 20932 "POST /api/users/register/ HTTP/1.1" 400 189
+WARNING 2025-11-19 00:39:05,289 basehttp 21136 24188 "POST /api/users/register/ HTTP/1.1" 400 189
+WARNING 2025-11-19 00:39:05,453 basehttp 21136 20932 "POST /api/users/register/ HTTP/1.1" 400 189
+WARNING 2025-11-19 00:39:05,664 basehttp 21136 20932 "POST /api/users/register/ HTTP/1.1" 400 189
+INFO 2025-11-19 00:41:57,770 basehttp 21136 1908 "OPTIONS /api/users/login/ HTTP/1.1" 200 0
+WARNING 2025-11-19 00:41:58,092 basehttp 21136 20176 "POST /api/users/login/ HTTP/1.1" 400 71
+WARNING 2025-11-19 00:41:58,321 basehttp 21136 20176 "POST /api/users/login/ HTTP/1.1" 400 71
+WARNING 2025-11-19 00:41:58,538 basehttp 21136 20176 "POST /api/users/login/ HTTP/1.1" 400 71
+WARNING 2025-11-19 00:41:58,759 basehttp 21136 20176 "POST /api/users/login/ HTTP/1.1" 400 71
+INFO 2025-11-19 00:42:10,562 basehttp 21136 25280 "OPTIONS /api/users/profile/ HTTP/1.1" 200 0
+INFO 2025-11-19 00:42:10,571 basehttp 21136 9780 "OPTIONS /api/users/profile/ HTTP/1.1" 200 0
+WARNING 2025-11-19 00:42:10,901 basehttp 21136 26816 "GET /api/users/profile/ HTTP/1.1" 403 58
+WARNING 2025-11-19 00:42:10,938 basehttp 21136 26816 "GET /api/users/profile/ HTTP/1.1" 403 58
+WARNING 2025-11-19 00:42:28,697 basehttp 21136 26664 "GET /api/users/profile/ HTTP/1.1" 403 58
+WARNING 2025-11-19 00:42:28,726 basehttp 21136 26664 "GET /api/users/profile/ HTTP/1.1" 403 58
+WARNING 2025-11-19 00:46:16,011 basehttp 21136 25896 "GET /api/users/profile/ HTTP/1.1" 403 58
+WARNING 2025-11-19 00:46:16,060 basehttp 21136 25896 "GET /api/users/profile/ HTTP/1.1" 403 58
+INFO 2025-11-19 00:54:48,855 autoreload 21136 12944 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\ubuntu_core\urls.py changed, reloading.
+INFO 2025-11-19 00:54:49,103 autoreload 25740 21732 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\ubuntu_core\urls.py changed, reloading.
+INFO 2025-11-19 00:54:52,046 autoreload 20812 18340 Watching for file changes with StatReloader
+INFO 2025-11-19 00:54:52,046 autoreload 20000 25360 Watching for file changes with StatReloader
+INFO 2025-11-19 00:55:02,089 autoreload 20000 25360 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\ubuntu_core\urls.py changed, reloading.
+INFO 2025-11-19 00:55:02,097 autoreload 20812 18340 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\ubuntu_core\urls.py changed, reloading.
+INFO 2025-11-19 00:55:04,414 autoreload 19772 25700 Watching for file changes with StatReloader
+INFO 2025-11-19 00:55:04,435 autoreload 25528 15040 Watching for file changes with StatReloader
+ERROR 2025-11-19 02:31:43,174 log 25528 18188 Internal Server Error: /api/users/profile/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 02:31:43,210 basehttp 25528 18188 "GET /api/users/profile/ HTTP/1.1" 500 156000
+ERROR 2025-11-19 02:31:43,609 log 25528 22800 Internal Server Error: /api/users/profile/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 02:31:43,675 basehttp 25528 22800 "GET /api/users/profile/ HTTP/1.1" 500 156000
+ERROR 2025-11-19 02:32:22,608 log 25528 21092 Internal Server Error: /api/users/profile/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 02:32:22,666 basehttp 25528 21092 "GET /api/users/profile/ HTTP/1.1" 500 156000
+ERROR 2025-11-19 02:32:22,863 log 25528 21612 Internal Server Error: /api/users/profile/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 02:32:22,872 basehttp 25528 21612 "GET /api/users/profile/ HTTP/1.1" 500 156000
+INFO 2025-11-19 02:34:00,248 autoreload 25528 15040 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\ubuntu_core\settings.py changed, reloading.
+INFO 2025-11-19 02:34:03,243 autoreload 24296 2180 Watching for file changes with StatReloader
+INFO 2025-11-19 02:34:21,374 autoreload 24296 2180 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\ubuntu_core\settings.py changed, reloading.
+INFO 2025-11-19 02:34:22,700 autoreload 25236 4028 Watching for file changes with StatReloader
+INFO 2025-11-19 02:35:06,800 autoreload 25236 4028 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\ubuntu_core\settings.py changed, reloading.
+INFO 2025-11-19 02:35:08,663 autoreload 23528 1908 Watching for file changes with StatReloader
+INFO 2025-11-19 02:36:01,027 autoreload 23528 1908 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\ubuntu_core\settings.py changed, reloading.
+INFO 2025-11-19 02:36:04,055 autoreload 26840 20088 Watching for file changes with StatReloader
+INFO 2025-11-19 02:36:46,520 autoreload 13608 18720 Watching for file changes with StatReloader
+ERROR 2025-11-19 02:36:57,876 log 26840 27424 Internal Server Error: /api/users/profile/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 02:36:57,924 basehttp 26840 27424 "GET /api/users/profile/ HTTP/1.1" 500 156001
+ERROR 2025-11-19 02:36:58,097 log 26840 25872 Internal Server Error: /api/users/profile/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 02:36:58,273 basehttp 26840 25872 "GET /api/users/profile/ HTTP/1.1" 500 156001
+INFO 2025-11-19 02:38:20,034 autoreload 13608 18720 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\ubuntu_core\settings.py changed, reloading.
+INFO 2025-11-19 02:38:20,042 autoreload 26840 20088 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\ubuntu_core\settings.py changed, reloading.
+INFO 2025-11-19 02:38:22,692 autoreload 22264 9316 Watching for file changes with StatReloader
+INFO 2025-11-19 02:38:23,114 autoreload 13248 26772 Watching for file changes with StatReloader
+INFO 2025-11-19 02:42:04,744 autoreload 13248 26772 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\ubuntu_core\settings.py changed, reloading.
+INFO 2025-11-19 02:42:04,822 autoreload 22264 9316 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\ubuntu_core\settings.py changed, reloading.
+INFO 2025-11-19 02:42:07,978 autoreload 9260 26804 Watching for file changes with StatReloader
+INFO 2025-11-19 02:42:08,058 autoreload 9664 21412 Watching for file changes with StatReloader
+INFO 2025-11-19 02:44:37,385 autoreload 9664 21412 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\users\views.py changed, reloading.
+INFO 2025-11-19 02:44:38,156 autoreload 9260 26804 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\users\views.py changed, reloading.
+INFO 2025-11-19 02:44:44,971 autoreload 27476 24476 Watching for file changes with StatReloader
+INFO 2025-11-19 02:44:44,971 autoreload 7304 26812 Watching for file changes with StatReloader
+ERROR 2025-11-19 02:45:04,838 log 7304 19396 Internal Server Error: /api/users/profile/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 02:45:04,875 log 7304 23432 Internal Server Error: /api/users/profile/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 02:45:04,935 basehttp 7304 19396 "OPTIONS /api/users/profile/ HTTP/1.1" 500 154073
+ERROR 2025-11-19 02:45:05,433 basehttp 7304 23432 "OPTIONS /api/users/profile/ HTTP/1.1" 500 154073
+INFO 2025-11-19 02:48:35,557 autoreload 27580 19476 Watching for file changes with StatReloader
+ERROR 2025-11-19 02:49:38,062 log 7304 13884 Internal Server Error: /api/users/profile/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 02:49:38,058 log 7304 24304 Internal Server Error: /api/users/profile/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 02:49:38,131 basehttp 7304 13884 "OPTIONS /api/users/profile/ HTTP/1.1" 500 154073
+ERROR 2025-11-19 02:49:38,150 basehttp 7304 24304 "OPTIONS /api/users/profile/ HTTP/1.1" 500 154073
+ERROR 2025-11-19 02:50:17,241 log 7304 16696 Internal Server Error: /api/users/register/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 02:50:17,264 basehttp 7304 16696 "OPTIONS /api/users/register/ HTTP/1.1" 500 154095
+INFO 2025-11-19 03:03:50,331 autoreload 7304 26812 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\users\serializers.py changed, reloading.
+INFO 2025-11-19 03:03:50,451 autoreload 27580 19476 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\users\serializers.py changed, reloading.
+INFO 2025-11-19 03:03:57,448 autoreload 25248 14264 Watching for file changes with StatReloader
+INFO 2025-11-19 03:03:57,615 autoreload 1460 26652 Watching for file changes with StatReloader
+ERROR 2025-11-19 03:04:14,510 log 1460 13960 Internal Server Error: /api/users/profile/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 03:04:14,528 log 1460 23192 Internal Server Error: /api/users/profile/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 03:04:15,168 basehttp 1460 13960 "OPTIONS /api/users/profile/ HTTP/1.1" 500 154073
+ERROR 2025-11-19 03:04:15,433 basehttp 1460 23192 "OPTIONS /api/users/profile/ HTTP/1.1" 500 154073
+ERROR 2025-11-19 03:05:23,491 log 1460 24980 Internal Server Error: /api/users/profile/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 03:05:23,607 basehttp 1460 24980 "OPTIONS /api/users/profile/ HTTP/1.1" 500 154059
+ERROR 2025-11-19 03:05:23,772 log 1460 5068 Internal Server Error: /api/users/profile/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 03:05:23,871 basehttp 1460 5068 "OPTIONS /api/users/profile/ HTTP/1.1" 500 154059
+ERROR 2025-11-19 03:05:56,239 log 1460 26828 Internal Server Error: /api/users/register/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 03:05:56,299 basehttp 1460 26828 "OPTIONS /api/users/register/ HTTP/1.1" 500 154081
+ERROR 2025-11-19 03:05:57,397 log 1460 25236 Internal Server Error: /api/users/register/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 03:05:57,437 basehttp 1460 25236 "OPTIONS /api/users/register/ HTTP/1.1" 500 154081
+ERROR 2025-11-19 03:44:17,974 log 1460 21488 Internal Server Error: /api/users/profile/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 03:44:18,089 log 1460 19532 Internal Server Error: /api/users/profile/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 03:44:18,111 basehttp 1460 21488 "OPTIONS /api/users/profile/ HTTP/1.1" 500 154079
+ERROR 2025-11-19 03:44:18,124 basehttp 1460 19532 "OPTIONS /api/users/profile/ HTTP/1.1" 500 154079
+ERROR 2025-11-19 05:28:21,263 log 1460 4036 Internal Server Error: /api/users/profile/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 05:28:21,279 log 1460 25100 Internal Server Error: /api/users/profile/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 05:28:21,414 basehttp 1460 4036 "OPTIONS /api/users/profile/ HTTP/1.1" 500 154079
+ERROR 2025-11-19 05:28:21,592 basehttp 1460 25100 "OPTIONS /api/users/profile/ HTTP/1.1" 500 154079
+ERROR 2025-11-19 05:30:00,729 log 1460 14364 Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 05:30:00,784 basehttp 1460 14364 "GET /api/register/ HTTP/1.1" 500 154843
+ERROR 2025-11-19 05:30:03,995 log 1460 23340 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 05:30:04,022 basehttp 1460 23340 "GET /favicon.ico HTTP/1.1" 500 154640
+ERROR 2025-11-19 05:33:03,680 log 1460 13580 Internal Server Error: /api/register/
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 05:33:03,732 basehttp 1460 13580 "GET /api/register/ HTTP/1.1" 500 154843
+ERROR 2025-11-19 05:33:04,343 log 1460 13828 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 145, in __call__
+    return self._postprocess(request, response, toolbar)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\middleware.py", line 187, in _postprocess
+    rendered = toolbar.render_toolbar()
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 93, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\venv\Lib\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2025-11-19 05:33:04,376 basehttp 1460 13828 "GET /favicon.ico HTTP/1.1" 500 154640
+INFO 2025-11-19 05:38:28,677 autoreload 25248 14264 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\ubuntu_core\urls.py changed, reloading.
+INFO 2025-11-19 05:38:30,515 autoreload 1460 26652 C:\Users\hp\OneDrive\Desktop\NOTES\fintech\project\UbuntuCap_Financial_Health\MYPROJECT\ubuntu-cap-backend\ubuntu_core\urls.py changed, reloading.
+INFO 2025-11-19 05:38:44,746 autoreload 26408 11076 Watching for file changes with StatReloader
+INFO 2025-11-19 05:38:44,746 autoreload 23616 23584 Watching for file changes with StatReloader
+INFO 2025-11-19 05:39:06,555 basehttp 23616 3432 "OPTIONS /api/users/profile/ HTTP/1.1" 200 0
+INFO 2025-11-19 05:39:06,569 basehttp 23616 15492 "OPTIONS /api/users/profile/ HTTP/1.1" 200 0
+WARNING 2025-11-19 05:39:09,971 base 23616 7992 Session data corrupted
+WARNING 2025-11-19 05:39:10,023 log 23616 7992 Forbidden: /api/users/profile/
+WARNING 2025-11-19 05:39:10,025 basehttp 23616 7992 "GET /api/users/profile/ HTTP/1.1" 403 58
+WARNING 2025-11-19 05:39:10,046 base 23616 7992 Session data corrupted
+WARNING 2025-11-19 05:39:10,100 log 23616 7992 Forbidden: /api/users/profile/
+WARNING 2025-11-19 05:39:10,103 basehttp 23616 7992 "GET /api/users/profile/ HTTP/1.1" 403 58
+WARNING 2025-11-19 05:40:14,289 log 23616 27032 Not Found: /api/register/
+WARNING 2025-11-19 05:40:14,292 basehttp 23616 27032 "GET /api/register/ HTTP/1.1" 404 16935
+INFO 2025-11-19 05:40:14,417 basehttp 23616 27032 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 30101
+INFO 2025-11-19 05:40:14,494 basehttp 23616 27032 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2025-11-19 05:40:14,564 basehttp 23616 11708 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 14879
+INFO 2025-11-19 05:40:14,682 basehttp 23616 11708 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4700
+WARNING 2025-11-19 05:40:17,102 log 23616 11708 Not Found: /favicon.ico
+WARNING 2025-11-19 05:40:17,104 basehttp 23616 11708 "GET /favicon.ico HTTP/1.1" 404 16926
+WARNING 2025-11-19 05:44:18,418 base 23616 25040 Session data corrupted
+WARNING 2025-11-19 05:44:18,498 log 23616 25040 Forbidden: /api/users/profile/
+WARNING 2025-11-19 05:44:18,500 basehttp 23616 25040 "GET /api/users/profile/ HTTP/1.1" 403 58
+WARNING 2025-11-19 05:44:18,521 base 23616 25040 Session data corrupted
+WARNING 2025-11-19 05:44:18,583 log 23616 25040 Forbidden: /api/users/profile/
+WARNING 2025-11-19 05:44:18,588 basehttp 23616 25040 "GET /api/users/profile/ HTTP/1.1" 403 58
+INFO 2025-11-19 05:45:09,890 basehttp 23616 24060 "OPTIONS /api/users/register/ HTTP/1.1" 200 0
+WARNING 2025-11-19 05:45:09,915 base 23616 25040 Session data corrupted
+WARNING 2025-11-19 05:45:10,480 log 23616 25040 Bad Request: /api/users/register/
+WARNING 2025-11-19 05:45:10,482 basehttp 23616 25040 "POST /api/users/register/ HTTP/1.1" 400 196
+WARNING 2025-11-19 05:56:09,441 base 23616 22724 Session data corrupted
+WARNING 2025-11-19 05:56:09,612 log 23616 22724 Forbidden: /api/users/profile/
+WARNING 2025-11-19 05:56:09,614 basehttp 23616 22724 "GET /api/users/profile/ HTTP/1.1" 403 58
+WARNING 2025-11-19 05:56:09,642 base 23616 22724 Session data corrupted
+WARNING 2025-11-19 05:56:09,738 log 23616 22724 Forbidden: /api/users/profile/
+WARNING 2025-11-19 05:56:09,744 basehttp 23616 22724 "GET /api/users/profile/ HTTP/1.1" 403 58
+INFO 2025-11-19 05:56:36,567 basehttp 23616 27384 "OPTIONS /api/users/login/ HTTP/1.1" 200 0
+WARNING 2025-11-19 05:56:36,584 base 23616 22724 Session data corrupted
+ERROR 2025-11-19 05:56:36,692 log 23616 22724 Internal Server Error: /api/users/login/
+ERROR 2025-11-19 05:56:36,695 basehttp 23616 22724 "POST /api/users/login/ HTTP/1.1" 500 61
+WARNING 2025-11-19 05:56:36,936 base 23616 22724 Session data corrupted
+ERROR 2025-11-19 05:56:37,001 log 23616 22724 Internal Server Error: /api/users/login/
+ERROR 2025-11-19 05:56:37,005 basehttp 23616 22724 "POST /api/users/login/ HTTP/1.1" 500 61
+WARNING 2025-11-19 05:56:37,151 base 23616 22724 Session data corrupted
+ERROR 2025-11-19 05:56:37,214 log 23616 22724 Internal Server Error: /api/users/login/
+ERROR 2025-11-19 05:56:37,216 basehttp 23616 22724 "POST /api/users/login/ HTTP/1.1" 500 61
+WARNING 2025-11-19 05:56:37,384 base 23616 22724 Session data corrupted
+ERROR 2025-11-19 05:56:37,449 log 23616 22724 Internal Server Error: /api/users/login/
+ERROR 2025-11-19 05:56:37,451 basehttp 23616 22724 "POST /api/users/login/ HTTP/1.1" 500 61
+WARNING 2025-11-19 05:56:39,109 base 23616 22724 Session data corrupted
+ERROR 2025-11-19 05:56:39,186 log 23616 22724 Internal Server Error: /api/users/login/
+ERROR 2025-11-19 05:56:39,189 basehttp 23616 22724 "POST /api/users/login/ HTTP/1.1" 500 61
+WARNING 2025-11-19 06:04:05,953 base 23616 4940 Session data corrupted
+WARNING 2025-11-19 06:04:06,033 log 23616 4940 Forbidden: /api/users/profile/
+WARNING 2025-11-19 06:04:06,046 basehttp 23616 4940 "GET /api/users/profile/ HTTP/1.1" 403 58
+WARNING 2025-11-19 06:04:06,099 base 23616 4940 Session data corrupted
+WARNING 2025-11-19 06:04:06,148 log 23616 4940 Forbidden: /api/users/profile/
+WARNING 2025-11-19 06:04:06,150 basehttp 23616 4940 "GET /api/users/profile/ HTTP/1.1" 403 58
+WARNING 2025-11-19 06:04:28,270 base 23616 4940 Session data corrupted
+WARNING 2025-11-19 06:04:28,389 log 23616 4940 Bad Request: /api/users/register/
+WARNING 2025-11-19 06:04:28,391 basehttp 23616 4940 "POST /api/users/register/ HTTP/1.1" 400 196
+WARNING 2025-11-19 06:06:01,322 base 23616 4940 Session data corrupted
+WARNING 2025-11-19 06:06:01,444 log 23616 4940 Bad Request: /api/users/register/
+WARNING 2025-11-19 06:06:01,446 basehttp 23616 4940 "POST /api/users/register/ HTTP/1.1" 400 196
+WARNING 2025-11-19 06:07:57,596 base 23616 4940 Session data corrupted
+ERROR 2025-11-19 06:07:57,780 log 23616 4940 Internal Server Error: /api/users/login/
+ERROR 2025-11-19 06:07:57,781 basehttp 23616 4940 "POST /api/users/login/ HTTP/1.1" 500 61
+WARNING 2025-11-19 06:10:12,793 base 23616 4940 Session data corrupted
+WARNING 2025-11-19 06:10:12,890 log 23616 4940 Bad Request: /api/users/register/
+WARNING 2025-11-19 06:10:12,895 basehttp 23616 4940 "POST /api/users/register/ HTTP/1.1" 400 196
+WARNING 2025-11-19 10:56:31,564 log 23616 1048 Not Found: /api/users/
+WARNING 2025-11-19 10:56:31,588 basehttp 23616 1048 "GET /api/users/ HTTP/1.1" 404 19548
+INFO 2025-11-19 10:56:44,430 basehttp 23616 1048 "GET /admin HTTP/1.1" 301 0
+INFO 2025-11-19 10:56:44,549 basehttp 23616 4336 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-11-19 10:56:45,147 basehttp 23616 4336 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 18009
+INFO 2025-11-19 10:56:45,223 basehttp 23616 4336 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-11-19 10:56:45,232 basehttp 23616 14384 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-11-19 10:56:45,278 basehttp 23616 19204 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-11-19 10:56:45,372 basehttp 23616 20632 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-11-19 10:56:45,372 basehttp 23616 15124 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-11-19 10:56:45,373 basehttp 23616 19060 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-11-19 10:56:45,464 basehttp 23616 15124 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-11-19 10:57:05,610 basehttp 23616 15124 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-11-19 10:57:05,827 basehttp 23616 15124 "GET /admin/ HTTP/1.1" 200 29989
+INFO 2025-11-19 10:57:05,890 basehttp 23616 15124 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-11-19 10:57:05,919 basehttp 23616 20632 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-11-19 10:57:05,919 basehttp 23616 19060 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-11-19 10:57:05,926 basehttp 23616 15124 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-11-19 10:57:27,252 basehttp 23616 15124 "GET /admin/users/user/add/ HTTP/1.1" 200 32991
+INFO 2025-11-19 10:57:27,310 basehttp 23616 15124 "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+INFO 2025-11-19 10:57:27,350 basehttp 23616 14384 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-11-19 10:57:27,370 basehttp 23616 19204 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-11-19 10:57:27,389 basehttp 23616 4336 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-11-19 10:57:27,439 basehttp 23616 15124 "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 200 663
+INFO 2025-11-19 10:57:27,444 basehttp 23616 14384 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-11-19 10:57:27,455 basehttp 23616 19060 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-11-19 10:57:27,464 basehttp 23616 19204 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11973
+INFO 2025-11-19 10:57:27,496 basehttp 23616 4336 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-11-19 10:57:27,498 basehttp 23616 15124 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-11-19 10:57:27,504 basehttp 23616 20632 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-11-19 10:57:27,531 basehttp 23616 14384 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-11-19 10:57:27,588 basehttp 23616 14384 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-11-19 10:57:27,629 basehttp 23616 14384 "GET /static/admin/js/unusable_password_field.js HTTP/1.1" 200 1480
+INFO 2025-11-19 10:57:27,775 basehttp 23616 19060 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-11-19 10:57:56,680 basehttp 23616 19060 "POST /admin/users/user/add/ HTTP/1.1" 200 33268
+INFO 2025-11-19 10:57:56,749 basehttp 23616 19060 "GET /admin/jsi18n/ HTTP/1.1" 200 3342

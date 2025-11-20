@@ -5,10 +5,17 @@ from .models import User, UserProfile, UserConsent, VerificationCode
 class UserRegistrationSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, min_length=6)
     password_confirm = serializers.CharField(write_only=True)
+    first_name = serializers.CharField(required=True, allow_blank=False)
+    last_name = serializers.CharField(required=True, allow_blank=False)
+    email = serializers.EmailField(required=True, allow_blank=False)
+    id_number = serializers.CharField(required=True, allow_blank=False)
     
     class Meta:
         model = User
-        fields = ['phone_number', 'password', 'password_confirm', 'registration_channel']
+        fields = [
+            'phone_number', 'password', 'password_confirm', 'registration_channel',
+            'first_name', 'last_name', 'email', 'id_number'  # Added these fields
+        ]
         extra_kwargs = {
             'phone_number': {'required': True},
             'registration_channel': {'required': True}
@@ -17,14 +24,30 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
     def validate(self, attrs):
         if attrs['password'] != attrs['password_confirm']:
             raise serializers.ValidationError({"password": "Password fields didn't match."})
+        
+        # Check if phone number already exists
+        if User.objects.filter(phone_number=attrs['phone_number']).exists():
+            raise serializers.ValidationError({"phone_number": "User with this phone number already exists."})
+        
+        # Check if email already exists
+        if attrs.get('email') and User.objects.filter(email=attrs['email']).exists():
+            raise serializers.ValidationError({"email": "User with this email already exists."})
+        
         return attrs
     
     def create(self, validated_data):
+        # Remove password_confirm from validated data
         validated_data.pop('password_confirm')
+        
+        # Create user with all fields
         user = User.objects.create_user(
             phone_number=validated_data['phone_number'],
             password=validated_data['password'],
-            registration_channel=validated_data.get('registration_channel', 'APP')
+            registration_channel=validated_data.get('registration_channel', 'WEB'),
+            first_name=validated_data.get('first_name', ''),
+            last_name=validated_data.get('last_name', ''),
+            email=validated_data.get('email', ''),
+            id_number=validated_data.get('id_number', '')
         )
         return user
 
