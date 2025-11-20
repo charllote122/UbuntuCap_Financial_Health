@@ -1,16 +1,15 @@
-# settings.py - Production Ready Configuration
+# settings.py - Production Ready Configuration for Render.com
 import os
 from decouple import config
 from pathlib import Path
-import dj_database_url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config('SECRET_KEY', default='django-insecure-change-in-production')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-# Railway will provide this environment variable
-default_hosts = 'localhost,127.0.0.1,.railway.app'
+# Render.com and local development hosts
+default_hosts = 'localhost,127.0.0.1,.onrender.com'
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default=default_hosts).split(',')
 
 # Application definition
@@ -38,7 +37,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # ADDED for static files
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -68,22 +67,23 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'ubuntu_core.wsgi.application'
 
-# Database
-# Use SQLite for development, PostgreSQL for production
-if DEBUG:
+# Database Configuration for Render.com
+if 'RENDER' in os.environ:
+    # Render.com PostgreSQL database
+    import dj_database_url
+    DATABASES = {
+        'default': dj_database_url.config(
+            conn_max_age=600,
+            conn_health_checks=True,
+        )
+    }
+else:
+    # Local development database
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': BASE_DIR / 'db.sqlite3',
         }
-    }
-else:
-    DATABASES = {
-        'default': dj_database_url.config(
-            default=config('DATABASE_URL'),
-            conn_max_age=600,
-            ssl_require=True
-        )
     }
 
 # Password validation
@@ -149,12 +149,10 @@ CSRF_TRUSTED_ORIGINS = [
     "http://127.0.0.1:8000",
 ]
 
-# Add Railway domain dynamically
+# Add Render.com domain for production
 if not DEBUG:
-    railway_domain = config('RAILWAY_STATIC_URL', default='').replace('/staticfiles', '')
-    if railway_domain:
-        CORS_ALLOWED_ORIGINS.append(railway_domain)
-        CSRF_TRUSTED_ORIGINS.append(railway_domain)
+    CORS_ALLOWED_ORIGINS.append("https://your-app-name.onrender.com")
+    CSRF_TRUSTED_ORIGINS.append("https://your-app-name.onrender.com")
 
 CORS_ALLOW_METHODS = [
     'DELETE', 'GET', 'OPTIONS', 'PATCH', 'POST', 'PUT',
