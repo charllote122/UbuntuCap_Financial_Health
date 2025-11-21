@@ -1,4 +1,4 @@
-# settings.py - Production Ready Configuration for Render.com
+# settings.py - Production Ready Configuration for Render.com with SQLite
 import os
 from decouple import config
 from pathlib import Path
@@ -9,8 +9,11 @@ SECRET_KEY = config('SECRET_KEY', default='django-insecure-change-in-production'
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 # Render.com and local development hosts
-default_hosts = 'localhost,127.0.0.1,.onrender.com'
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default=default_hosts).split(',')
+ALLOWED_HOSTS = [
+    'ubuntucap-financial-health.onrender.com',
+    'localhost',
+    '127.0.0.1'
+]
 
 # Application definition
 INSTALLED_APPS = [
@@ -67,24 +70,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'ubuntu_core.wsgi.application'
 
-# Database Configuration for Render.com
-if 'RENDER' in os.environ:
-    # Render.com PostgreSQL database
-    import dj_database_url
-    DATABASES = {
-        'default': dj_database_url.config(
-            conn_max_age=600,
-            conn_health_checks=True,
-        )
+# SQLite Database Configuration
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
-else:
-    # Local development database
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
+}
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
@@ -136,6 +128,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5500", 
     "http://localhost:8000",
     "http://127.0.0.1:8000",
+    "https://ubuntucap-financial-health.onrender.com",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -147,12 +140,8 @@ CSRF_TRUSTED_ORIGINS = [
     "http://127.0.0.1:3000",
     "http://localhost:8000",
     "http://127.0.0.1:8000",
+    "https://ubuntucap-financial-health.onrender.com",
 ]
-
-# Add Render.com domain for production
-if not DEBUG:
-    CORS_ALLOWED_ORIGINS.append("https://your-app-name.onrender.com")
-    CSRF_TRUSTED_ORIGINS.append("https://your-app-name.onrender.com")
 
 CORS_ALLOW_METHODS = [
     'DELETE', 'GET', 'OPTIONS', 'PATCH', 'POST', 'PUT',
@@ -257,3 +246,6 @@ LOGGING = {
         'level': 'INFO',
     },
 }
+
+# SQLite specific settings for Render
+# Note: SQLite on Render has limitations - data may be lost on redeploys
